@@ -45,6 +45,7 @@ These colors help users visually understand emotional trends.
 - Local State Management
 
 ---
+## *PLEASE USE SUPABASE / DOWNLOAD AND INSTALL*
 
 ##  Authentication
 
@@ -173,6 +174,57 @@ https://github.com/Selah-98
 
 Email  
 divineilunga011@gmail.com
+
+---
+## Deploy to Vercel
+
+To deploy your app online:
+
+Go to https://vercel.com
+
+Click Add New Project
+
+Import your GitHub repository
+
+Add your Supabase environment variables:
+
+VITE_SUPABASE_URL=your_url
+VITE_SUPABASE_ANON_KEY=your_key
+
+*Click Deploy*
+
+Your app will then be live on a Vercel URL.
+
+Supabase Setup
+
+## This project uses Supabase for:
+
+Authentication
+
+Database storage
+
+Mood tracking entries
+
+Create a table like this:
+
+Column	Type
+id	uuid
+user_id	uuid
+mood	text
+note	text
+created_at	timestamp
+
+## After deployment, users will be able to:
+
+Sign up / log in
+
+Track moods
+
+Edit or delete past entries
+
+View mood statistics
+
+See moods in a calendar view
 
 ---
 
